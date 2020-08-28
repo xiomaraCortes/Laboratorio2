@@ -1,0 +1,60 @@
+
+body {
+    background: #fafafa;
+    position: relative;
+    background-image: url('../img/Fondo.jpeg');
+    /* background-image: url('https://image.freepik.com/vector-gratis/vector-fondo-gris-blanco-tecnologia-futurista_53876-85332.jpg'); */
+  }
+  
+  .Avatar{
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     object-fit: cover;
+     z-index: 2;
+     margin-top: -12%;
+     margin-left: 42%;
+     border: 1px solid;
+     position: absolute;
+     background-size: cover;
+     background-image: url('../img/avatar.png');
+     cursor: pointer;
+     -webkit-box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+     -moz-box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+     box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+  
+  }
+  
+  
+  .Cuerpo{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+    z-index: 1;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+    box-shadow: 15px 7px 48px -20px rgba(0,0,0,0.75);
+  }
+  
+  .Espacio{
+    margin-left: 60px;
+  }
+  
+  .Boton{
+    background-color: #c0e5e4;
+    font-weight: bold;
+  }
+  .Boton:hover{
+      background-color: #f1bc19;
+  }
+  .Centro{
+    text-align: center;
+  }
+  .GridList{
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+  .Cursor{
+    cursor: pointer;
+  }

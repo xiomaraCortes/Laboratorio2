@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<link rel="stylesheet" href="../Css/Formulario.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class=" mdl-card mdl-shadow--2dp Avatar">
+    </div>
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp Cuerpo">
+        <form action="#">
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar" style="margin-top: 50px">
+                    <a href="#inf-panel" class="mdl-tabs__tab is-active">Información</a>
+                    <a href="#pre-panel" class="mdl-tabs__tab">Preguntas</a>
+                    <a href="#Bus-panel" class="mdl-tabs__tab">Buscadores</a>
+                </div>
+
+                <!-- tab de Información -->
+                <div class="mdl-tabs__panel is-active" id="inf-panel">
+                    <div class="mdl-grid Espacio">
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="text" class="mdl-textfield__input" id="nombres" name="nombres" required
+                                    pattern="[A-Za-z]">
+                                <label for="nombres" class="mdl-textfield__label"><strong>Nombres: </strong>
+                                </label>
+                                <span class="mdl-textfield__error">Campo obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="text" class="mdl-textfield__input" id="apellidos" name="apellidos" required
+                                    pattern="[A-Za-z]">
+                                <label for="apellidos" class="mdl-textfield__label"> <strong>Apellidos:
+                                    </strong></label>
+                                <span class="mdl-textfield__error">Campo obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="email" class="mdl-textfield__input" id="email" name="email" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                <label for="email" class="mdl-textfield__label"> <strong>Correo:
+                                    </strong></label>
+                                <span class="mdl-textfield__error">Campo obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?"
+                                    id="sample4" required>
+                                <label class="mdl-textfield__label" for="sample4">Telefono</label>
+                                <span class="mdl-textfield__error">Por favor ingrese un número</span>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input type="text" class="mdl-textfield__input" id="direccion" name="direccion"
+                                    required>
+                                <label for="direccion" class="mdl-textfield__label"> <strong>Dirección:
+                                    </strong></label>
+                                <span class="mdl-textfield__error">Campo obligatorio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center links Centro">
+                        <button class="mdl-button mdl-js-button mdl-button--raised Boton" type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+                <!-- tab de preguntas -->
+                <div class="mdl-tabs__panel" id="pre-panel">
+                    <div class="mdl-grid GridList">
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <p>1.¿En qué país se encuentra la Universidad de Cambridge?</p>
+                            <p><input class="Cursor" type="radio" name="pregunta1" id="p11">Reino Unido</p>
+                            <p><input class="Cursor" type="radio" name="pregunta1" id="p12"> Estados Unidos </p>
+                            <p><input class="Cursor" type="radio" name="pregunta1" id="p13"> Canadá</p>
+                            <p><input class="Cursor" type="radio" name="pregunta1" id="p14"> Inglaterra</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <p>2.¿En qué año viajó al espacio el primer ser humano?</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta2" id="p21">1975</p>
+                            <p><input class="Cursor" type="radio" name="pregunta2" id="p22">1961</p>
+                            <p><input class="Cursor" type="radio" name="pregunta2" id="p23">1963</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta2" id="p24">1985</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <p>3.¿Cómo se llama el estadio del Real Madrid?</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta3" id="p31">
+                                La Bombonera</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta3" id="p32">
+                                Camp Nou</p>
+                            <p><input class="Cursor" type="radio" name="pregunta3" id="p33">
+                                Santiago Bernabeu.</p>
+                            <p><input class="Cursor" type="radio" name="pregunta3" id="p34">
+                                Allianz Arena</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <p>4.¿Qué enfermedad padeció Stephen Hawking?</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta4" id="p41">
+                                Botulismo</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta4" id="p42">
+                                Neuropatía</p>
+                            <p ><input class="Cursor" type="radio" name="pregunta4" id="p43">
+                                Parálisis de Bell</p>
+                            <p><input class="Cursor" type="radio" name="pregunta4" id="p44">
+                              Esclerosis Lateral Amiotrófica</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center links Centro">
+                        <button class="mdl-button mdl-js-button mdl-button--raised Boton" type="button" onclick="resultado()">
+                            Nota
+                        </button>
+                    </div>
+                </div>
+                <!-- tab de buscadores -->
+                <div class="mdl-tabs__panel" id="Bus-panel">
+                    <div class="mdl-grid GridList">
+                        <div class="mdl-cell mdl-cell--4-col">
+                        <a href="http://www.google.com" target="_blank"> 
+                                <input type="radio"  class="mdl-radio__button" name="options" checked>
+                                <span class="mdl-radio__label">Google</span>
+                            </a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <a href="https://www.bing.com" target="_blank"> 
+                                <input type="radio" class="mdl-radio__button" name="options" >
+                                <span class="mdl-radio__label">Bing</span>
+                            </a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <a href="https://co.search.yahoo.com/" target="_blank"> 
+                                <input type="radio"  class="mdl-radio__button" name="options" >
+                                <span class="mdl-radio__label">Yahoo</span>
+                            </a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <a href="https://duckduckgo.com/" target="_blank"> 
+                                <input type="radio"  class="mdl-radio__button" name="options" >
+                                <span class="mdl-radio__label">Duck Duck Go</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    function resultado() {
+        var p1, p2, p3, p4, nota;
+        //  Primera pregunta
+        if (document.getElementById('p11').checked == true) { p1 = 1 }
+        else { p1 = 0 }
+        //  Primera pregunta
+        if (document.getElementById('p22').checked == true) { p2 = 1 }
+        else { p2 = 0 }
+        //  Primera pregunta
+        if (document.getElementById('p33').checked == true) { p3 = 1 }
+        else { p3 = 0 }
+        //  Primera pregunta
+        if (document.getElementById('p44').checked == true) { p4 = 1 }
+        else { p4 = 0 }
+
+        nota = p1 + p2 + p3 + p4;
+        alert("Su nota es de: " + nota);
+        // location.reload();
+    }
+</script>
